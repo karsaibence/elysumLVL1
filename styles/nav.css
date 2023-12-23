@@ -1,0 +1,47 @@
+.grid-menu {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 4rem;
+}
+
+ul li h2 {
+    display: inline;
+}
+
+.buttons {
+    text-align: center;
+    padding-top: 7px;
+}
+.buttons .primary{
+    margin-left: 1rem;
+}
+.primary {
+    display: inline;
+    padding-inline: 1.75rem;
+    padding-block: .5rem;
+    border-radius: 1.25rem;
+    transition: ease-in-out .25s;
+    background-color: var(--text-button-color);
+    color: var(--bg-color-button);
+    border: solid 2px var(--text-button-color);
+}
+
+.primary:hover {
+    color: var(--text-button-color);
+    background-color: var(--bg-color-button);
+}
+
+.secondary {
+    background-color: transparent;
+    color: var(--text-button-color);
+}
+
+.secondary:hover {
+    background-color: var(--text-button-color);
+    color: var(--bg-color-button) !important;
+}

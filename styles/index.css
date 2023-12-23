@@ -1,0 +1,80 @@
+@import url(variables.css);
+@import url(imgtextbox.css);
+@import url(content.css);
+@import url(nav.css);
+@import url(heading.css);
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+span {
+    margin-top: 2rem;
+}
+
+nav {
+    grid-area: n;
+}
+
+.heading {
+    grid-area: h;
+    text-align: center;
+}
+
+.img-textBox {
+    grid-area: itb;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.content {
+    grid-area: c;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas:
+        'n n'
+        'h h'
+        'itb itb'
+        'c c';
+    gap: 3rem;
+    max-width: 1024px;
+    margin-inline: auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .grid {
+        grid-template-areas: 
+            'n'
+            'h'
+            'itb'
+            'c';
+    }
+    .img-textBox{
+        grid-template-columns: 1fr;
+    }
+    .content{
+        grid-template-columns: 1fr;
+    }
+    .buttons .primary{
+        display: block;
+        margin: 1rem;
+        max-width: 120px;
+    }
+    
+}
