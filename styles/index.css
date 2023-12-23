@@ -76,5 +76,8 @@ nav {
         margin: 1rem;
         max-width: 120px;
     }
+    .buttons{
+        padding-top: 0px;
+    }
     
 }
