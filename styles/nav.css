@@ -17,9 +17,12 @@ ul li h2 {
     text-align: center;
     padding-top: 7px;
 }
-.buttons .primary{
+
+.buttons .primary {
     margin-left: 1rem;
+
 }
+
 .primary {
     display: inline;
     padding-inline: 1.75rem;
